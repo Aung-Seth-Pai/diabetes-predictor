@@ -108,7 +108,3 @@ Check if the API is operational.
 - Trained on the scikit-learn diabetes dataset
 - Features are normalized
 - Prediction range: 25-346 (disease progression score)
-
-## License
-
-[MIT License](LICENSE)
