@@ -7,15 +7,12 @@ import os
 
 # load datasets
 diabetes = load_diabetes()
-print(diabetes.DESCR)
+# print(diabetes.DESCR)
 
 # split into train and test sets
 X_train, X_test, y_train, y_test = train_test_split(
     diabetes.data, diabetes.target, test_size=0.2, random_state=42)
 print(X_train.shape, X_test.shape)
-
-print(y_train.min(), y_train.max())
-exit()
 
 # train random forest model
 model = RandomForestRegressor(n_estimators=100, random_state=42, max_depth=10)
